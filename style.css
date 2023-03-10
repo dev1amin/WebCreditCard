@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    Font-size: 15px;
+    min-height: 100vh;
+}
+.half{
+    display: flex;
+    align-items: center;
+    gap: 20em;
+    flex-wrap: wrap;
+}
+.left0{
+    min-height: 100vh;
+    width: 40%;
+    background-image: url("./images/bg-main-desktop.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cards{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.front-card{
+    position: relative;
+    transform: translateX(-100px);
+}
+#logoc{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+#num0{
+    position: absolute;
+    color: white;
+    bottom: 4rem;
+    left: 1rem;
+    letter-spacing: 2px;
+}
+.card-text{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    right: 3rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.back-card{
+    position: relative;
+}
+#cvc0{
+    position: absolute;
+    right: 3.5rem;
+    top: 7rem;
+    color: rgb(221, 221, 221);
+}
+.error{
+    border: 2px solid red;
+}
+.error_message{
+    gap: 0;
+}
+.error_message::after{
+    color: red;
+    margin-top: .2rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    color: hsl(278, 68%, 11%);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 13px;
+    outline: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+input::placeholder {
+    color: hsl(270, 3%, 87%);
+    font-family: 'Space Grotesk', sans-serif;
+    Font-size: 15px;
+  }
+form label{
+    text-align: right;
+    color: hsl(278, 68%, 11%);
+}
+#cvc{
+    width: 227px;
+}
+#name{
+    width: 500px;
+}
+#number{
+    width: 500px;
+}
+#ma input{
+    width: 100px;
+}
+#ma{
+    margin: 10px;
+    margin-left: 0px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#botao{
+    width: 528px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    Font-size: 18px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    cursor: pointer;
+    z-index: 0;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+#botaof{
+    width: 528px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    Font-size: 18px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    cursor: pointer;
+    z-index: 0;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+#botao:hover {
+    font-size: 25px;
+    z-index: 1;
+    transition: font-size 0.2s ease-in-out, z-index 0s 0.2s;
+  }
+.thank{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+#botaof{
+    width: 350px;
+}
+.thank h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hidden{
+    display: none;
+    gap: 0;
+}
+
+
+@media screen and (max-width: 1023px){
+    #card, #backcard{
+        width: 300px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left{
+        background-image: url("./images/bg-main-desktop.png");
+        width: 100%;
+        height: 456px;
+        margin: 0;
+        padding: 0;
+    }
+    #num{
+        position: absolute;
+        color: white;
+        top: 5em;
+        left: 2.5em;
+        letter-spacing: 1px;
+        font-weight: 900;
+        z-index: 2;
+    }
+    #num2{
+        position: absolute;
+        color: white;
+        top: 12.5em;
+        left: 12em;
+        font-weight: 300;
+        z-index: 2;
+    }
+    #nome{
+        position: absolute;
+        color: white;
+        top: 6.4em;
+        left: 2.5em;
+        font-weight: 200;
+        z-index: 2;
+    }
+    #date {
+        position: absolute;
+        color: white;
+        top: 10em;
+        left: 18em;
+        font-weight: 300;
+        z-index: 2;
+    }
+    #logo {
+        position: absolute;
+        top: 1.5em;
+        left: 4em;
+        z-index: 2;
+        width: 65px;
+
+    }
+    .conteiner{
+        margin-top: 50px;
+    }
+    #bg{
+        display: none;
+    }
+    #cv{
+        display: none;
+    }
+    #cvc{
+        width: 100px;
+    }
+    #name{
+        width: 250px;
+    }
+    #number{
+        width: 250px;
+    }
+    #ma input{
+        width: 50px;
+    }
+    #botao{
+        width: 250px;
+    }
+    #card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translate(37px);
+    }
+    #backcard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translate(45px);
+        margin-top: 40px;
+    }
+    .conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .text1 {
+      display: block;
+    }
+    #show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  @media only screen and (min-width: 1023px) {
+    .text1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .text2 {
+      display: none;
+    }
+    #botaof{
+        width: 328px;
+        height: 55px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Space Grotesk', sans-serif;
+        Font-size: 18px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        cursor: pointer;
+        z-index: 0;
+        display: inline-block;
+        margin-top: 10px;
+    
+    }
+
+  }
+  @media only screen and (min-width: 1023px) {
+  .text2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1023px){
+    .front-card img,.back-card img{
+        width: 300px;
+    }
+    #logoc{
+        width: 40px;
+    }
+    #num0{
+        font-size: 20px;
+    }
+    #cvc0{
+        top: 42%;
+        left: 78%;
+    }
+    .thank{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:767px){
+    .conteiner{
+        margin-top: 95px;
+    }
+    .half{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .left0{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .cards{
+        left: 50%;
+        flex-direction: column-reverse;
+        margin-top: 52px;
+    }
+    .front-card{
+        transform: translateX(-30px);
+        margin-top: -105px;
+        z-index: 2;
+    }
+    .back-card{
+        transform: translateX(30px);
+        z-index: 0;
+    }
+    .thank{
+        margin-top: 100px;
+    }
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div class="half">
+  <div class="left0">
+    <div class="cards">
+      <div class="front-card">
+        <img src="./images/bg-card-front.png">
+        <div class="card-geral">
+          <img id="logoc" src="./images/card-logo.svg">
+          <h1 id="num0">0000 0000 0000 0000</h1>
+          <div class="card-text">
+            <span id="nome0">Amin Morais</span>
+            <span id="data0"> 
+              <span id="mes0">00</span>
+              /
+              <span id="ano0">00</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="back-card">
+        <img src="./images/bg-card-back.png">
+        <span id="cvc0">000</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-sec">
+    <div class="aligns">
+      <div class="thank hidden">
+        <img src="./images/icon-complete.svg" alt="">
+        <h2>Thank You!</h2>
+        <p>We've added your card details</p>
+        <a href="./index.html"><button id="botaof">Continue</button></a>
+      </div>
+    </div>
+    <form>
+      <div class="conteiner">
+        <label for="name">NOME NO CARTÃO</label>
+        <br>
+        <input type="text" name="nome" id="name" placeholder="João Pedro" required maxlength="20">
+        <br>
+
+        <label for="numbe">NÚMERO DO CARTAO</label>
+        <br>
+        <input type="text" name="numbe" id="number" placeholder="1234 5678 9101 1121" required maxlength="16">
+        <br>
+        
+
+        <div class="grid-container">
+          
+            <div><label for="numb">EXP. DATA (MM/AA)</label></div>
+            <div class="text2"><label for="numb" >CVC </label></div>
+            <div id="ma">
+              <div> <input type="text" name="date" id="data" placeholder="MM" required maxlength="2">
+              <input type="text" name="data" id="dataa" placeholder="AA" required maxlength="2"></div>
+            </div>
+          <div id="show">
+            <div class="text1"><label for="nu" >CVC</label></div>
+            <div><input type="text" name="cvc" id="cvc" placeholder="123" required maxlength="3"></div>
+          </div>
+        </div>
+
+        <button id="botao">Confirmar</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<br>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://dev1amin.github.io/PortfolioWeb/WebPortfolio/index.html">Amin :))</a>.
+</div>
+</div>
+
+
+
+</body>
+</html>
